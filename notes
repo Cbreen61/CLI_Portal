@@ -1,0 +1,17 @@
+Portal App - Ricks portal gun 
+    - using Rick and morty API
+
+// Burp on user! and say sup bitches!
+ - ask what the user is looking for?(dimentions or a person)
+    - return list of  locations
+    ask for which locations they want information on?
+    return information about that choice 
+- return list of characters - extra
+    ask for which characters they want information on?
+    return information about that choice 
+
+CLI class - dealing with stuff on the terminal
+API class - Deal with all API things 
+Locations class - dealing with all locations
+character class - delaing with all characters
+ 

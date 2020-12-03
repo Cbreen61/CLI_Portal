@@ -5,3 +5,10 @@ source "https://rubygems.org"
 
 gem "rake", "~> 12.0"
 
+gem 'httparty', '~> 0.18.1'
+
+gem 'pry', '~> 0.13.1' 
+
+gem 'rest-client'
+
+gem 'json'
