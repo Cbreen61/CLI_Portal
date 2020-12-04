@@ -10,3 +10,5 @@ gem 'pry', '~> 0.13.1'
 gem 'rest-client'
 
 gem 'json'
+
+gem 'colorize'
