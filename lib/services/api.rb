@@ -10,11 +10,20 @@ class Api
        
 
     def self.load_locations
-        locations = []
-        response = RestClient.get(base_url + '/location')
-        data = JSON.parse(response.body)
-        data["results"].each do |location_data|
-            Locations.new(location_data)
-        end 
+        page = 0
+   
+        while true
+            response = RestClient.get(base_url + "/location/?page=#{page}")
+            data = JSON.parse(response.body)
+
+            data["results"].each do |location_data|
+              Locations.new(location_data)
+            end 
+            
+            if data["id"].nil?
+                break
+            end
+            page += 1
+        end
     end
 end
