@@ -91,7 +91,7 @@ class Cli
     end
 
     def invalid_selection
-        puts "You've selected and incorrect choice, stop being a Morty and try again!".colorize(:yellow)
+        puts "You've selected and incorrect choice, stop being a Morty and try again!".colorize(:light_red)
     end
 
     def user_choice
