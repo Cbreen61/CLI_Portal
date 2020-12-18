@@ -17,7 +17,6 @@ class Character
 
     def self.find_by_name(name)
         Character.all.find{ |characters| characters.name == name}
-        name
     end
     
     def self.return_names
