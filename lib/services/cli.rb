@@ -72,12 +72,10 @@ class Cli
 
         if input == "L"
             list_locations
-            sleep 1
             puts "Selecta a location for more details".colorize(:green)
             home_screen_options
         elsif input == "C"
             list_characters
-            sleep 1
             puts "Select a Character for more details".colorize(:green)
             home_screen_options
         elsif input == "Exit"
@@ -107,7 +105,6 @@ class Cli
     end
     def location_infromation_menu_options
         puts "Select the number associated with location you want more detials on.".colorize(:green)
-        sleep 1
         puts "Or type 'Exit' to leave the portal gun".colorize(:cyan)
         location_details_menu
     end
@@ -141,13 +138,9 @@ class Cli
         puts "________________________".colorize(:red)
     end
     def reselect_or_exit
-        sleep 1
         puts "Would you like to choose again or return to the home screen?".colorize(:green)
-        sleep 1
         puts "'1' for the main menu".colorize(:cyan)
-        sleep 1
         puts "'Exit' to exit portal gun".colorize(:green)
-        sleep 1
         input = user_choice
 
         if input == '1'
@@ -171,9 +164,7 @@ class Cli
         character_information_menu_options
     end
     def character_information_menu_options
-        sleep 1
         puts "Select the number associated with character you want more detials on.".colorize(:green)
-        sleep 1
         puts "Or type 'Exit' to leave the portal gun".colorize(:cyan)
         character_details_menu
     end
